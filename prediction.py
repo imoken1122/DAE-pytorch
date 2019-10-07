@@ -14,10 +14,6 @@ def create_DAEdata(model,df):
     model.eval()
     dae_data = model_dae(th.Tensor(df),predict = True)
     return dae_data
-def submit(data):
-    col = [f"col_{i}" for i in range(data.shape[1])]
-    df= pd.DataFrame(data,columns=col)
-    train_dae,test_dae = dae_data[:,:],dae_data[ntrain:,:]
 
 train,test,rank_data = load_data(True)
 ntrain = len(train)
