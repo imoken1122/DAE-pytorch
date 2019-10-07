@@ -1,5 +1,5 @@
 # DAE-pytorch
-This repository implemented Denoising Auto Encoder that extracting features from table data.
+This repository implemented __Denoising Auto Encoder__ that extracting features from table data.
 
 ### usage
 ```
