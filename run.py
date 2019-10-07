@@ -54,7 +54,7 @@ def valid_(valx,valy,opt,loss_f,batch_size):
 if __name__ == "__main__":
 
     df = feather.read_dataframe("../data/input/rank_gauss.feather").values
-    tr = feather.read_dataframe("../data/input/train").values
+    tr = feather.read_dataframe("../data/input/train.feather").values
     n_train = len(tr); del tr
     DECAY = 0.95
     BATHCSIZE = 128
